@@ -10,6 +10,26 @@ It contains two simple shell functions:
 - `win2utf` — converts a file from Windows-1251 to UTF-8
 - `utf2win` — converts a file from UTF-8 to Windows-1251
 
+
+##Mount 
+
+1. Open nano ~/.zshrc
+2. Copy/paste this at the end of your zshrc:
+# === Encoding Aliases ===
+win2utf() {
+    iconv -f WINDOWS-1251 -t UTF-8 "$1" > "$1".utf8.txt
+}
+
+utf2win() {
+    iconv -f UTF-8 -t WINDOWS-1251 "$1" > "$1".win1251.txt
+}
+
+
+3.Exit zshrc with Ctrl + X and save result Y. 
+4. Run source ~/.zshrc to reload shell confog and now you can use it. 
+
+
+
 ## Usage
 
 Just run:
