@@ -36,3 +36,9 @@ Just run:
 
 ```bash
 win2utf your_file.txt
+
+
+## Future Plans
+
+Add automatic detection of file encoding and convert it to your system's 
+default encoding.
