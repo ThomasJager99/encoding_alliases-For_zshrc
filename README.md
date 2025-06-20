@@ -15,7 +15,7 @@ It contains two simple shell functions:
 
 1. Open nano ~/.zshrc
 2. Copy/paste this at the end of your zshrc:
-# === Encoding Aliases ===
+
 win2utf() {
     iconv -f WINDOWS-1251 -t UTF-8 "$1" > "$1".utf8.txt
 }
